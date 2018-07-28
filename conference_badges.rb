@@ -35,4 +35,4 @@ def printer(attendees)
   end
 end
 
-printer [john, amy, clark]
+printer()["john", "amy", "clark"])
