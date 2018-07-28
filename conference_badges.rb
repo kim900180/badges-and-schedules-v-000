@@ -25,7 +25,7 @@ def printer(attendees)
   batch_counter = 0
   while batch_counter < attendees.size
     puts batch_badge_creator(attendees)[batch_counter]
-    batch_coutner += 1
+    batch_counter += 1
   end
 
   room_counter = 0
