@@ -24,13 +24,13 @@ end
 def printer(attendees)
   batch_counter = 0
   while batch_counter < attendees.size
-    puts batch_badge_creator[batch_counter]
+    puts batch_badge_creator(attendees)[batch_counter]
     batch_coutner += 1
   end
 
   room_counter = 0
   while room_counter < attendees.size
-    puts assign_rooms[room_counter]
+    puts assign_rooms(attendees)[room_counter]
     room_counter += 1
   end
 end
