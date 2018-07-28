@@ -34,3 +34,5 @@ def printer(attendees)
     room_counter += 1
   end
 end
+
+printer [john, amy, clark]
