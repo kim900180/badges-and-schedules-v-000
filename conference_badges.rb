@@ -21,14 +21,16 @@ def assign_rooms(array)
   return batch
 end
 
-def printer
+def printer(attendees)
   counter_message = 0
   counter_room = 0
-  while counter_message < batch_badge_creator(array).size
+
+  while counter_message < batch_badge_creator(attendees).size
     puts batch_badge_creator[counter_message]
     counter_message += 1
   end
-  while counter_room < assign_rooms(array).size
+
+  while counter_room < assign_rooms(attendees).size
     puts assign_rooms[counter_room]
     counter_room += 1
   end
